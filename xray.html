@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Rectifier Tube X-Ray</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Main -->
+			<div id="main">
+			<h1>Adam Logan</h1>
+			<ul class="icons">
+						<li><a href="https://www.youtube.com/channel/UCRlMz2gsgVe0-LtU5rgZRyg" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+						<li><a href="https://github.com/AdamLLogan" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/adamlogan27/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:contact@adamlogan.dev" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+				<!-- One -->
+					<section id="one">
+						<ul class="actions">
+							<li><a href="index.html" class="button">Home</a></li>
+							<li><a href="rocket.html" class="button">Rocketry</a></li>
+							<li><a href="electronics.html" class="button">Electronics</a></li>
+							<li><a href="physics.html" class="button">Physics</a></li>
+							<li><a href="contact.html" class="button">Contact</a></li>							
+						</ul>
+						<header class="major">
+							<h2>Generating X-Rays!</h2>
+						</header>
+						<h3>Last updated: 2021-11-13</h3>
+						<p>Radiation is pretty neat to me. I've been interested in the topic for a long time and always wanted
+						to take x-rays of objects. For years, I have tried generating them using rectifier tubes. At the time,
+						however, I used tubes which had leaded-glass and the power supply did not output enough voltage (I'd estimate
+						20kV, around 40kV and up is needed to get good x-ray generation).</p>
+						<p>Recently, I modified my ZVS flyback driver and experimented with dual-staging flybacks (inspired by 
+						<a href="http://uzzors2k.com/index.php?page=tubexray">Uzzors2k</a>).
+						This generated very long sparks, indicating I am generating a much higher voltage than previous attempts. Then, I
+						connected the new power supply to the rectifier tube I have (Sylvania 6bk4c) and checked if there was any generation of x-rays
+						with my geiger counter. To my delight, there was! I had finally generated x-rays. However, there was not enough to make the phosphor screen
+						fluoresce. This meant I could not take x-rays of objects.</p>
+						<p>After looking through the <a href="https://4hv.org/e107_plugins/forum/forum_viewtopic.php?106277">experiments by user radhoo on 4hv forums</a>, I
+						sourced two 2X2 tubes and tested them in regular and reverse polarity. Just like radhoo's results, reverse polarity produced more x-rays. This time, the
+						x-rays produced caused the phosphor screen to fluoresce, meaning I can now take pictures!. To hold the tubes,I modeled and printed a holder 
+						which holds the tubes at a 45 degree angle. This is to follow the results from radhoo's experiments with beam spread.</p>
+						<p>When taking pictures, I only run one tube at a time. This is because the crossing beams would result in a blurry image. Running two tubes at
+						once is to have fun generating a lot of radiation.</p>
+						<p>For radiation shielding, I used a few lead diving weights. This reduced my exposure considerably.</p>
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<!--h2>Recent Work</h2-->
+						<div class="row">
+							<article class="col-12 col-12-large work-item">
+								<img src="images/xray/xray_tubes.jpg" class="image fit thumb" alt="Picture of tubes fluorescing" />
+								<img src="images/xray/xray_tubes_bright.jpg" class="image fit thumb" alt="" />
+								<img src="images/xray/lightbulb.jpg" class="image fit thumb" alt="" />
+								<h3>This picture of a light bulb is one of the better pictures I've taken</h3>
+								<p>Description</p>
+							</article>
+						</div>
+						</ul>
+					</section>
+			</div>
+
+	</body>
+</html>
